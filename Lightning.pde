@@ -1,7 +1,7 @@
 int startX = 0;
 int startY = 600;
-int endX = 200;
-int endY = 500;
+int endX = 0;
+int endY = 600;
 PImage img;
 
 void setup()
@@ -9,32 +9,28 @@ void setup()
   size(846, 832);
   strokeWeight(20);
   background(0, 0, 0);
-  img = loadImage("Second_Pikachu.png");
+  img = loadImage("pikachu.jpg");
 
 }
 void draw()
 {
   image(img, 0, 0);
-  stroke((int)(Math.random()*250), (int)(Math.random()*250), 250);
-  while (endX < 200) { 
+  // stroke((int)(Math.random()*250), (int)(Math.random()*250), 250);
+  while (endX < 417) { 
   	endX = startX + (int)(Math.random()*9);
   	endY = startY + (int)(Math.random()*18) - 9;
 
+    stroke(0, 255, 100);
   	line(startX, startY, endX, endY);
-  	line(startX, startY, endX, endY);
-  	line(startX, startY, endX, endY);
-
 
   	startX = endX; 
   	startY = endY; 
   }
-}
-void mousePressed()
-{
-   startX = 0;
-   startY = 600;
-   endX = 200;
-   endY = 500;
+
+  startX = 0;
+  startY = 660;
+  endX = 0;
+  endY = 600;
    
 }
 
