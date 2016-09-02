@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(200,200,200);
+    background-color: rgb(255, 255, 0);
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -21,3 +21,9 @@ footer {
 	font-size: 90%;
 }
 
+footer {
+    text-align: left;
+    background-color: white;
+    border: 6px inset white;
+    padding: 70px;
+}
